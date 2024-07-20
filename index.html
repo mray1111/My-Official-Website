@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="bg-blue-50 font-serif ">
+
+
+<!-- navbar -->
+<nav class="flex md:h-10  justify-between w-[92%]  mx-auto md:mt-5 ">
+  <div class="text-xs cursor-default font-thin max-sm:mt-3">Manish Ray</div>
+  <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-xs max-sm:gap-2 ">
+          <li><a href="#about" class="hover:underline hover:underline-offset-4 cursor-pointer hover:to-black">About</a></li>
+          <li><a href="#experience" class="hover:underline hover:underline-offset-4 cursor-pointer hover:to-black">My Skills</a></li>
+          <li><a href="#projects" class="hover:underline hover:underline-offset-4 cursor-pointer hover:to-black">Projects</a></li>
+          <li><a href="#achievements" class="hover:underline hover:underline-offset-4 cursor-pointer hover:to-black">Achievements</a></li>
+          <li><a href="#courses" class="hover:underline hover:underline-offset-4 cursor-pointer hover:to-black">My Courses</a></li>
+          <li><a href="#extracurricular" class="hover:underline hover:underline-offset-4 cursor-pointer hover:to-black">Extracurricular</a></li>
+          <li><a href="#contact" class="hover:underline hover:underline-offset-4 cursor-pointer hover:to-black">Contact</a></li>
+      </ul>
+  </div>
+  <div class="flex items-center gap-6" onclick="onToggleMenu(this)">
+      <ion-icon name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+  </div>
+</nav>      
+<!-- Profile section -->
+<section id="profile" class="profile md:flex  md:justify-center md:space-x-32 mt-16 ">
+  <div class="section-pic max-md:ml-[200px] flex-col justify-center items-center ">
+    <img class="h-72 w-72 md:w-[300px] rounded-full md:mx-36 max-sm:h-[175px] max-sm:ml-[-90px] max-sm:mt-[-57px] md:ml-[80px]  " src="./assets/about-pic3.jpg" alt="My profile pic">
+  </div>
+
+  <div class="section-text md:space-y-9 text-center md:w-full md:p-0 md:m-0 max-sm:ml-[17px]  ">
+    <p class="text-xs max-sm:mt-[10px] max-sm:ml-1">Hello, I'm </p>
+    <h1 class="text-xl font-medium max-sm:ml-1 ">Manish Ray</h1>
+    <h5 class="text-sm min-w-fit   ">Maths and Computing (Dept of Mathematics) <br> Dept of Mehta Family School of Data Science and Artificial Intelligence, IIT Guwahati </h5>
+    <p class="text-3xl">MERN Stack Developer </p>
+
+     <div class="btn-container flex  space-x-8 justify-center max-sm:mt-[35px] ">
+      <button class="h-10 w-40 hover:text-lg  bg-black text-white rounded-3xl" onclick="window.open('https://drive.google.com/file/d/1vrTDF2iZJj5KnMPHcCn8dnQaVcy5QYNP/view','_blank')">Download CV </button>
+      <button class="h-10 w-40 hover:text-lg bg-black text-white rounded-3xl" onclick="location.href='./#contact' ">Contact Info </button>
+     </div>
+
+     <div class="social-container flex justify-center space-x-16 max-sm:mt-[44px]">
+      <a href="https://www.linkedin.com/in/manish-ray-55899b252/" target="_blank">
+        <img src="./assets/linkedin.png" alt="My LinkedIn" class="h-10 w-10 text-sm text-white">
+    </a>
+    <a href="https://github.com/mray1111?tab=repositories" target="_blank">
+        <img src="./assets/github.png" alt="My GitHub" class="h-10 w-10 text-sm text-white">
+    </a>
+     </div>
+  </div>
+</section>
+
+
+<!-- About section  -->
+ <section id="about">
+  <p class="text-center text-xs max-sm:mt-20 max-sm:ml-[65px]">Get to know more</p>
+  <h1 class="text-2xl font-black text-center max-sm:ml-[65px]">About Me</h1>
+  <div class="section-container flex max-md:m-10 p-20 space-x-9 max-sm:mt-[-69px] ">
+    <div class="about-details-container">
+      <div class="about-container md:flex md:space-x-7 md:justify-evenly max-sm:flex-wrap max-sm:space-y-7 max-sm:ml-[-41px] ">
+        <div class="details-container border-2 border-black rounded-lg flex flex-col justify-center items-center h-52 w-72 ">
+          <img class="h-7 w-7 " src="/assets/experience.png" alt="Experience icon ">
+          <h3 class="text-xs">Experience</h3>
+          <p class="flex justify-center items-center text-center">TEDx IIT Guwahati <br><a class="text-blue-800 m-2 underline underline-offset-4 hover:text-black text-xs hover:font-medium " href="https://www.linkedin.com/feed/update/urn:li:activity:7128801967941767169/" target="_blank" rel="noopener noreferrer">  WebOps</a></p> <br> <p class="text-center text-xs">Building, maintaining TEDx IIT Guwahati website</p>
+        </div>
+        <div class="details-container border-2 border-black rounded-lg flex flex-col justify-center items-center h-52 w-72 " >
+          <img class="h-7 w-7" src="./assets/education.png" alt="education icon">
+          <h3 class="text-xs">Education</h3>
+          <p class="flex justify-center items-center text-center" >M.Sc in Maths and Computing <br> IIT Guwahati</p>
+        </div>
+      </div>
+
+      <div class="text-container max-md:m-10 max-sm:m-1 max-sm:p-1 max-sm:mt-5 max-sm:w-full">
+        <p class="max-sm:w-[427px] max-sm:ml-[-103px] md:mt-10 text-xs">I'm Manish Ray, a student of IIT Guwahati, Mathematics and Computing.I've developed skills in full-stack web development in MA 518 Database Management Systems course under the mentorship of Dr. Kalpesh Kapoor (Dept of Mathematics, IIT Guwahati), focusing on the MERN stack application in which I built a full ecommerce web application. I have also successfully completed Summer Hackstack on Frontend Development in React, Backend Development in Node.js, and building websites in HTML, CSS, and JavaScript (conducted by the Student's Web Committee, IIT Guwahati )(<a href="https://swc.iitg.ac.in/swc" target="_blank" class="text-blue-500 underline">SWC</a>).
+        </p>
+      </div>
+    </div>
+  </div>
+ </section>
+
+<!-- Experience section -->
+<section id="experience" class="py-12 max-sm:ml-[72px]">
+  <p class="text-center text-3xl mb-8">My Skills</p>
+
+  <!-- Whole box -->
+  <div class="experience-details-container flex flex-wrap justify-center">
+
+    <!-- First box -->
+    <div class="details-container w-full md:w-2/5 h-[100%] m-4 p-6 border-2 border-black rounded-lg">
+      <h2 class="text-center text-3xl mb-6">Frontend and Backend Development</h2>
+      <div class="article-container grid grid-cols-1 md:grid-cols-2 gap-4">
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">HTML</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">CSS</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">JavaScript</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">React</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Tailwind CSS</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Node.js</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">MongoDB</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Express.js</h3>
+        </article>
+      </div>
+    </div>
+
+    <!-- Second box -->
+    <div class="details-container w-full md:w-2/5 h-[100%] m-4 p-6 border-2 border-black rounded-lg">
+      <h2 class="text-center text-3xl mb-6">Machine Learning, Data Science and AI</h2>
+      <div class="article-container grid grid-cols-1 md:grid-cols-2 gap-4">
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Python, C/C++</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">MySQL</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">NumPy</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Pandas</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Seaborn</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Scikit-learn</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">Matplotlib</h3>
+        </article>
+        <article class="flex items-center space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-xs">StatsModels</h3>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects section -->
+<section id="projects" class="py-10">
+  <p class="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-4">Browse My Recent</p>
+  <h1 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-10">Projects</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <img src="./assets/project1.png" alt="Project 1" class="w-full h-48 object-cover rounded-md" />
+      </div>
+      <h2 class="text-xl font-medium mb-2">Ecommerce Website- MERN Stack</h2>
+      <div class="flex justify-between">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" onclick="window.open('https://github.com/mray1111/ecommerceTestingWeb/tree/main','_blank')">Github</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" onclick="window.open('https://github.com/mray1111/ecommerceTestingWeb/blob/main/DBMS_project_report%20(1).pdf')">Presentation Report</button>
+      </div>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <img src="./assets/project2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-md" />
+      </div>
+      <h2 class="text-xl font-medium mb-2">Statistical Inference-Python Project</h2>
+      <div class="flex justify-between">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" onclick="window.open('https://github.com/mray1111/statistics_IITG_project/blob/main/Project2Group2.py','_blank')">Github</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" onclick="window.open('https://github.com/mray1111/statistics_IITG_project/blob/main/Project2Group2.pdf','_blank')">Presentation Report</button>
+      </div>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <img src="./assets/project3.png" alt="Project 3" class="w-full h-48 object-cover rounded-md" />
+      </div>
+      <h2 class="text-xl font-medium mb-2">Image Generation using GANs</h2>
+      <div class="flex justify-between">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" onclick="window.open('https://colab.research.google.com/drive/1v0THsMd5ifXZQrbEPnvQTpdqtO2-R3-T?usp=sharing', '_blank')">Github</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" onclick="window.open('https://github.com/mray1111/IITG-data-science-and-AI-project/blob/main/DA322m_Project_Final.pdf','_blank')">Microsoft Powerpoint</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Achievements section -->
+<section id="achievements" class="py-12">
+  <!-- Whole box -->
+  <div class="experience-details-container flex flex-wrap justify-center">
+    <div class="details-container w-full md:w-2/3 lg:w-4/5 m-4 p-6 border-2 border-gray-200 rounded-lg  shadow-md">
+      <h2 class="text-center text-3xl mb-6">Achievements</h2>
+      <div class="article-container grid grid-cols-1 gap-6">
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <div>
+            <h3 class="text-sm">Got AA (10 out of 10) grade in my Final year Master's Thesis Project(MTP) at IIT Guwahati</h3>
+            <p class="text-xs">Project supervisor: Dr Sagarmoy Dutta</p>
+            <p class="text-xs">Project Title: Portfolio Optimization using Large Language Models (Portfolio Transformer)</p>
+            <p class="text-xs">Relevant Topic: Mathematical Finance, Natural Language Processing, Large Language Models (Transformer), Deep Learning and AI </p>
+          </div>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9 md:mt-[-9px]" />
+          <h3 class="text-sm">Got Selected in Prestigious INSPIRE Scholarship (to secure top 1% in West Bengal State, India)</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <h3 class="text-sm">Maintaining good academic performance consistently in my undergraduate (9.55 CGPA out of 10), Higher Secondary education (Class 12, scoring 91.6%), Secondary Education (Class 10, scoring 90%)</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9 md:mt-[-4px]" />
+          <h3 class="text-sm">Solving DSA problem maintaining consistency over 300+ days long streak in Leetcode</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <h3 class="text-sm">Completed Summer hackstack at IIT Guwahati in HTML, CSS, JavaScript (<a href="https://drive.google.com/file/d/1tyx5E24pREeLi0C_ppAmVyU31wRxRU-e/view" target="_blank" class="text-blue-500 underline">Certificate</a>) conducted by Student's Web Committee, IIT Guwahati (<a href="https://swc.iitg.ac.in/swc" target="_blank" class="text-blue-500 underline">SWC</a>)</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <h3 class="text-sm">Completed Summer hackstack at IIT Guwahati on React (<a href="https://drive.google.com/file/d/1uAw8nJdhDr246Ep6sWNO6wtrBbMMAgIj/view" target="_blank" class="text-blue-500 underline">Certificate</a>) conducted by Student's Web Committee, IIT Guwahati (<a href="https://swc.iitg.ac.in/swc" target="_blank" class="text-blue-500 underline">SWC</a>)</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <h3 class="text-sm">Completed Summer hackstack at IIT Guwahati in Node JS Backend (<a href="https://drive.google.com/file/d/1uBKVN9csV03Qq8ITgQsxSVPlxOlnWDEw/view" target="_blank" class="text-blue-500 underline">Certificate</a>) conducted by Student's Web Committee, IIT Guwahati (<a href="https://swc.iitg.ac.in/swc" target="_blank" class="text-blue-500 underline">SWC</a>)</h3>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Relevant Courses in IIT Guwahati -->
+<section id="courses" class="py-12">
+  <p class="text-center text-3xl mb-8">My Courses at IIT Guwahati</p>
+
+  <!-- Whole box -->
+  <div class="experience-details-container flex flex-wrap justify-center">
+
+    <!-- First box -->
+   <div class="details-container w-full md:w-1/5 lg:w-1/3 m-4 p-6 border-2 border-gray-200 rounded-lg bg-white shadow-md">
+    <h2 class="text-center text-3xl mb-6">Machine Learning, Data Science and AI</h2>
+    <div class="article-container grid grid-cols-1 gap-4">
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <div>
+          <h3 class="text-sm">DA 322M Deep Learning</h3>
+          <p class="text-xs">Project Supervisor: Dr. Prasant Patil, Dept of Mehta Family School of Data Science and Artificial Intelligence, IIT Guwahati</p>
+        </div>
+      </article>
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <div>
+          <h3 class="text-sm">DA 624 NLP with Large Language Models</h3>
+          <p class="text-xs">Project Supervisor: Dr. Chiranjib Sur, Dept of Mehta Family School of Data Science and Artificial Intelligence, IIT Guwahati</p>
+        </div>
+      </article>
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <h3 class="text-sm">MA 522 Linear Algebra</h3>
+      </article>
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <h3 class="text-sm">MA 590 Probability Theory</h3>
+      </article>
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <h3 class="text-sm">MA 591 Optimization Techniques</h3>
+      </article>
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <h3 class="text-sm">MA 682 Statistical Inference</h3>
+      </article>
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <h3 class="text-sm">MA 571 Numerical Linear Algebra</h3>
+      </article>
+      <article class="flex items-start space-x-4">
+        <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+        <h3 class="text-sm">MA 572 Numerical Analysis</h3>
+      </article>
+    </div>
+  </div>
+
+  <!-- second box -->
+    <div class="details-container w-full md:w-1/5 lg:w-1/3 m-4 p-6 border-2 border-gray-200 rounded-lg bg-white shadow-md">
+      <h2 class="text-center text-3xl mb-6">Computer Science</h2>
+      <div class="article-container grid grid-cols-1 gap-4">
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 501 Discrete Mathematics</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 511 Computer Programming</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 512 Data Structures and Algorithms</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 514 Theory of Computation</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <div>
+            <h3 class="text-sm">MA 518 Database Management Systems</h3>
+            <p class="text-xs">Project Supervisor: Dr. Kalpesh Kapoor, Dept of Mathematics, IIT Guwahati</p>
+          </div>
+        </article>
+        <h2 class="text-center text-3xl mb-6 mt-6 ">Finance</h2>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 592 Mathematical Finance</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 668 Algorithmic and High Frequency Trading</h3>
+        </article>
+      </div>
+    </div>
+
+    <!-- Third box -->
+    <div class="details-container w-full md:w-1/5 lg:w-1/3 m-4 p-6 border-2 border-gray-200 rounded-lg bg-white shadow-md">
+      <h2 class="text-center text-3xl mb-6">Mathematics</h2>
+      <div class="article-container grid grid-cols-1 gap-4">
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 541 Real Analysis</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 547 Complex Analysis</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 543 Functional Analysis</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 542 Differential Equations</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 521 Modern Algebra</h3>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9"/>
+          <h3 class="text-sm">MA 573 Numerics of Partial Differential Equations</h3>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Extracurricular section -->
+<section id="extracurricular" class="py-12">
+  <!-- Whole box -->
+  <div class="experience-details-container flex flex-wrap justify-center">
+    <div class="details-container w-full md:w-2/3 lg:w-4/5 m-4 p-6 border-2 border-gray-200 rounded-lg shadow-md">
+      <h2 class="text-center text-3xl mb-6">Extracurricular Activities</h2>
+      <div class="article-container grid grid-cols-1 gap-6">
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <div>
+            <h3 class="text-sm">I have been an active member of Prakriti Club, the techno-environment club of IITG. Prakriti Club comes under the Technical Board of the Student Gymkhana of IIT Guwahati.</h3>
+          </div>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <div>
+            <h3 class="text-sm">Being the second oldest club of the institute, Prakriti Club reaches across ancient disciplinary boundaries between technology and environment and aims to provide a comprehensive platform for effective solutions to environmental issues through innovative and efficient projects.</h3>
+            <a href="https://www.iitg.ac.in/prakriti/env_activities.html" target="_blank" class="text-blue-500 underline text-sm">Learn more</a>
+          </div>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <div>
+            <h3 class="text-sm">We organize a Mega Plantation drive to make the campus more beautiful than before. As we know, IIT Guwahati is one of the greenest and most beautiful campuses in India. We take care of it and ensure that its greenery never fades away.</h3>
+          </div>
+        </article>
+        <article class="flex items-start space-x-4">
+          <img src="./assets/checkmark.png" alt="Experience icon" class="h-9 w-9" />
+          <div>
+            <h3 class="text-sm">This project delves into the assessment of the carbon footprint of the Indian Institute of Technology (IIT) Guwahati campus, examining its environmental impact based on greenhouse gas emissions (CO2). The study aligns with India's commitment to climate action unveiled during the COP26 summit, emphasizing the crucial role of technical education institutions in mitigating carbon emissions. The primary objective is to classify the campus as Carbon Positive, Carbon Negative, or Carbon-Neutral.</h3>
+            <a href="https://drive.google.com/file/d/1YMKApg9Phaop6rdgz2lHf4Hbiby_kkGl/view?usp=sharing" target="_blank" class="text-blue-500 underline text-sm">Read our report</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact section -->
+<section id="contact" class="py-10">
+  <p class="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-4">Get in Touch</p>
+  <h1 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-10">Contact Me</p>
+  <div class="flex flex-col md:flex-row justify-center items-center md:space-x-10 px-4">
+    <div class="flex items-center mb-4 md:mb-0">
+      <img src="./assets/email.png" alt="Email icon" class="w-6 h-6 md:mt-[26px] max-sm:mt-[12px]" />
+      <p><a class="text-sm sm:text-sm ">manishiitguwahati37@gmail.com</a></p>
+    </div>
+    <div class="flex items-center">
+      <img src="./assets/linkedin.png" alt="LinkedIn icon" class="w-5 h-5 md:mt-[26px] max-sm:mt-[10px]" />
+      <p><a href="https://www.linkedin.com/in/manish-ray-55899b252/" target="_blank" class="text-sm sm:text-sm">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-6  text-black text-center text-xs">
+  <nav class="mb-4">
+    <ul class="flex flex-wrap justify-center space-x-2 md:space-x-4">
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#experience" class="hover:underline">My Skills</a></li>
+      <li><a href="#projects" class="hover:underline">Projects</a></li>
+      <li><a href="#achievements" class="hover:underline">Achievements</a></li>
+      <li><a href="#courses" class="hover:underline">My Courses</a></li>
+      <li><a href="#extracurricular" class="hover:underline">Extracurricular Activities</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="text-xs">&copy; 2024 Manish Ray. All Rights Reserved.</p>
+</footer>
+
+<script>
+const navLinks = document.querySelector('.nav-links');
+function onToggleMenu(e) {
+    e.name = e.name === 'menu' ? 'close' : 'menu';
+    if (navLinks.style.top === '10%') {
+        navLinks.style.top = '-100%';
+    } else {
+        navLinks.style.top = '10%';
+    }
+}
+</script>
+</body>
+</html>
